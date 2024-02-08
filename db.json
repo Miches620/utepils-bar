@@ -1,0 +1,142 @@
+{
+  "Cervezas": [
+    {
+      "id": 1,
+      "producto": "Dorada",
+      "imagen": "assets/images/Blonde-Ale.png",
+      "alt": "Pinta de Dorada",
+      "descripcion": "SUAVE - MALTOSA - FACIL DE TOMAR.",
+      "ibu": 2,
+      "precio": 1800
+    },
+    {
+      "id": 2,
+      "producto": "Honey",
+      "imagen": "assets/images/Honey-Ale.png",
+      "alt": "Pinta de Honey",
+      "descripcion": "SUAVE - CUERPO MEDIO - MIEL.",
+      "ibu": 1,
+      "precio": 1800
+    },
+    {
+      "id": 3,
+      "producto": "IPA",
+      "imagen": "assets/images/IPA.png",
+      "alt": "Pinta de IPA",
+      "descripcion": "LUPULADA - FRUTAL - REFRESCANTE.",
+      "ibu": 4,
+      "precio": 2000
+    },
+    {
+      "id": 4,
+      "producto": "Irish",
+      "imagen": "assets/images/Irish-Red.png",
+      "alt": "Pinta de Irish",
+      "descripcion": "SUAVE - ACARAMELADA.",
+      "ibu": 2,
+      "precio": 1800
+    },
+    {
+      "id": 5,
+      "producto": "Porter",
+      "imagen": "assets/images/Porter.png",
+      "alt": "Pinta de Porter",
+      "descripcion": "OSCURA - CAFE - CHOCOLATE.",
+      "ibu": 3,
+      "precio": 1800
+    },
+    {
+      "id": 6,
+      "producto": "Fernet",
+      "imagen": "assets/images/Fernet.png",
+      "alt": "Pinta de Fernet-Cola",
+      "descripcion": "REFRESCANTE - INTENSO - 70/30.",
+      "ibu": 0,
+      "precio": 3000
+    }
+  ],
+  "Bebidas": [
+    {
+      "id": 1,
+      "producto": "Gaseosa (Linea Pepsi)",
+      "descripcion": "COLA - LIMA - NARANJA - POMELO.",
+      "precio": 1500
+    },
+    {
+      "id": 2,
+      "producto": "Aguas Saborizadas",
+      "descripcion": "MANZANA - NARANJA - PERA - POMELO.",
+      "precio": 1500
+    },
+    {
+      "id": 3,
+      "producto": "Agua Mineral",
+      "descripcion": "",
+      "precio": 1000
+    }
+  ],
+  "Comidas": [
+    {
+      "id": 1,
+      "producto": "Picada Clasica",
+      "descripcion": "SALAME - QUESO.",
+      "precio": 4000
+    },
+    {
+      "id": 2,
+      "producto": "Picada Especial",
+      "descripcion": "SALAME - QUESO - NUGGETS - NOISETTES - TEQUEÑOS.",
+      "precio": 7000
+    },
+    {
+      "id": 3,
+      "producto": "Porcion de Nuggets",
+      "descripcion": "x 8 unidades.",
+      "precio": 2000
+    },
+    {
+      "id": 4,
+      "producto": "Porcion de Papas",
+      "descripcion": "Papas Noisettes",
+      "precio": 1500
+    },
+    {
+      "id": 5,
+      "producto": "Porcion de Tequeños",
+      "descripcion": "x 4 unidades.",
+      "precio": 1800
+    },
+    {
+      "id": 6,
+      "producto": "Pizza Muzza",
+      "descripcion": "Tamaño: 8 Porciones",
+      "precio": 4500
+    },
+    {
+      "id": 7,
+      "producto": "Empanadas (x unidad)",
+      "descripcion": "CARNE - ESPINACA Y QUESO - JAMON Y QUESO.",
+      "precio": 700
+    }
+  ],
+  "Pedido": [
+    {
+      "id": 6,
+      "producto": "Fernet",
+      "cantidad": 1,
+      "precio": 3000
+    },
+    {
+      "id": 7,
+      "producto": "Empanadas (x unidad)",
+      "cantidad": 3,
+      "precio": 700
+    },
+    {
+      "id": 2,
+      "producto": "Honey",
+      "cantidad": 2,
+      "precio": 1800
+    }
+  ]
+}

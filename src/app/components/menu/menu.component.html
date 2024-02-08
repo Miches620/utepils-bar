@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Utepils</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="menu">
+        <header>
+            <div class="menu-title-heading">
+                <img
+                  class="menu-title-logo"
+                  src="assets/images/Utepils.png"
+                  alt="Utepils"
+                />
+                <h1 class="menu-title">Menu Utepils</h1>
+                <img
+                  class="menu-title-logo"
+                  src="assets/images/Utepils.png"
+                  alt="Utepils"
+                />
+              </div>
+              <div class="menu-user-heading">
+                <i class="fa-solid fa-user"></i>
+                <div class="menu-carrito-heading">
+                  <i class="fa-solid fa-utensils"></i>
+                  <p class="carrito" *ngIf="pedido">{{itemsPedido}}</p>
+                </div>
+              </div>
+        </header>
+        <h2 class="menu-group-heading">Bebidas</h2>
+        <div class="menu-group">
+          <div *ngFor="let item of webMenuCervezas; let i = index" class="menu-item">
+            <img [src]="item.imagen" [alt]="item.alt" class="menu-item-image" />
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading">
+                <span class="menu-item-name">{{ item.producto }}</span>
+                <span class="menu-item-precio">${{ item.precio }}</span>
+              </h3>
+              <p class="menu-item-description">{{ item.descripcion }}</p>
+              <div class="menu-item-footing">
+                <div class="menu-item-footing-bitter">
+                  <div
+                    *ngFor="let i of getNumeros(item.ibu)"
+                    class="menu-item-bitters"
+                  >
+                    <img
+                      class="menu-item-bitter"
+                      src="assets/images/hop.png"
+                      alt="Amargor"
+                    />
+                  </div>
+                </div>
+                <button type="button" class="btn btn-primary menu-item-buy" (click)="agregarAlPedido(i, item.producto)">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="menu-group-heading">Sin Alcohol</h2>
+        <div class="menu-group">
+          <div *ngFor="let item of webMenuBebidas; let i = index" class="menu-item">
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading">
+                <span class="menu-item-name">{{ item.producto }}</span>
+                <span class="menu-item-precio">${{ item.precio }}</span>
+              </h3>
+              <div class="menu-item-footing">
+                <p class="menu-item-description">{{ item.descripcion }}</p>
+                <button type="button" class="btn btn-primary menu-item-buy" (click)="agregarAlPedido(i, item.producto)">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="menu-group-heading">Comidas</h2>
+        <div class="menu-group">
+          <div *ngFor="let item of webMenuComidas; let i = index" class="menu-item">
+            <div class="menu-item-text">
+              <h3 class="menu-item-heading">
+                <span class="menu-item-name">{{ item.producto }}</span>
+                <span class="menu-item-precio">${{ item.precio }}</span>
+              </h3>
+              <div class="menu-item-footing">
+                <p class="menu-item-description">{{ item.descripcion }}</p>
+                <button type="button" class="btn btn-primary menu-item-buy" (click)="agregarAlPedido(i, item.producto)">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p class="text-footer">
+          Desarrollado por Michelena Santiago. Lujan 2024
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
